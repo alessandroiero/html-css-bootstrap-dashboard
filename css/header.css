@@ -1,4 +1,21 @@
 header{
     height: 80px;
-    background-color: green;
 }
+header .container-fluid{
+    padding: 0;
+}
+header nav{
+    margin-top: .75rem;
+}
+header .navbar-brand{
+    padding: 0;
+}
+#ms_dropdown-menu[data-bs-popper="static"] {
+    top: 100%;
+    right: 0;
+    left: auto;
+}
+
+#basic-addon2{
+    border-radius: 0;
+} 

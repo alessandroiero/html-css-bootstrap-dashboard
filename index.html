@@ -25,9 +25,56 @@
 
 <body>
     <!-- Header -->
-    <header>
+    <header class="d-flex bg-light">
         <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg bg-white px-2">
+                <div class="container-fluid ">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="index.html">
+                        <img class="img-fluid d-none d-lg-block" src="img/logo.svg" alt="Logo">
+                        <img class="mobile img-fluid d-lg-none" width="40" src="img/mobile-logo.png" alt="Logo Mobile">
+                    </a>
+                    <!-- /logo -->
 
+                    <!-- Form -->
+                    <form id="searchbar" class="d-flex flex-grow-1 me-2 ">
+                        <span class="input-group-text border-0 bg-white bg-body-secondary" id="basic-addon2"><i class="fas fa-search"></i></span>
+                        <input type="text" id="basic-addon2" class="bg-body-secondary border-0 form-control form-control-md"
+                            placeholder="Prova a cercare lezioni di Laravel" aria-label="Type Keywords"
+                            aria-describedby="basic-addon2">
+                    </form>
+                    <!-- /Form -->
+                    <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span><i class="fa-solid fa-bell text-warning "></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#"><i
+                                        class="fa-solid fa-list-ul"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-circle-question"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="fa-solid fa-bell text-warning"></i>
+                                </a>
+                                <ul class="dropdown-menu" id="ms_dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Profilo</a></li>
+                                    <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                                </ul>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
     </header>
     <!-- /Header -->
@@ -40,7 +87,7 @@
         </aside>
         <!-- /Aside -->
 
-        <div id="right" class="d-flex flex-column"> 
+        <div id="right" class="d-flex flex-column">
             <!-- Section Top -->
             <section id="piano-boolean">
                 <div class="container">
