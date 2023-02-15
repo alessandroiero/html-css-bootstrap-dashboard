@@ -5,25 +5,26 @@ main {
 }
 
 aside {
-    width: 80px;
+    width: 100px;
+    max-width: 150px;
+    min-height: 150px;
     height: 100%;
     background-color: var(--secondary-color);
     flex-direction: column;
     background-image: url(../img/sidebar-bg.png);
 }
+aside a{
+    text-decoration: none;
+}
 
 #right {
-    flex-grow: 1;
+    width: 100%;
     overflow-y: auto;
 }
 
 #piano-boolean {
     width: 100%;
     background-color: var(--primary-color);
-}
-
-#hero .row {
-    background-color: purple;
 }
 
 #piano-boolean .nome-titolo {
@@ -37,11 +38,32 @@ aside {
     font-size: .9375rem;
     font-weight: 300;
 }
+.classe::before {
+    display: inline-block;
+    background-image: url(../img/class-avatar.png);
+    background-size: cover;
+    display: inline-block;
+    width: 1.5625rem; 
+    height: 1.5625rem;
+    vertical-align: middle;
+    content:"";
+    margin-right: .3125rem;
+}
+
+.table tr > td:first-of-type{
+    width: 50%;
+}
+
+
 
 @media screen and (min-width:992px) {
     aside {
-        max-width: 250px;
+        max-width: 200px;
         min-width: 150px;
-        width: 200px;
+        width: 150px;
+    }
+    #right {
+        width: calc(100% - 150px);
+        overflow-y: auto;
     }
 }
