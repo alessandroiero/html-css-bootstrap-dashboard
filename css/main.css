@@ -55,7 +55,6 @@ aside a{
 }
 
 
-
 @media screen and (min-width:992px) {
     aside {
         max-width: 200px;
@@ -65,5 +64,14 @@ aside a{
     #right {
         width: calc(100% - 150px);
         overflow-y: auto;
+    }
+    aside .top li,
+    aside .bottom li{
+    width:88px; 
+    word-break:break-all;
+    }
+    aside .top li:hover,
+    aside .bottom li:hover{
+    background-color: rgba(255, 255, 255, 0.4);
     }
 }
